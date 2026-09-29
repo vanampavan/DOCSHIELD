@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: docshield
+    runtime: docker
+    plan: starter
+    disk: {name: vault, mountPath: /data, sizeGB: 5}
+    envVars:
+      - {key: DOCSHIELD_MASTER_KEY, sync: false}
+      - {key: DOCSHIELD_TOKEN_SECRET, sync: false}
+      - {key: SMTP_HOST, sync: false}
+      - {key: SMTP_USER, sync: false}
+      - {key: SMTP_PASS, sync: false}
+      - {key: MAIL_FROM, sync: false}

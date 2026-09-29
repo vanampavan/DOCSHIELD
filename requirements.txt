@@ -1,0 +1,8 @@
+flask
+argon2-cffi
+cryptography
+pyotp
+pypdf
+pytesseract
+pillow
+gunicorn
